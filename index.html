@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Car Mdoel</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="js/Base.js"></script>
+  <script src="js/Car.js"></script>
+</head>
+
+<body>
+
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="table-gltf" src="./assets/car/scene.gltf"></a-asset-item>
+    </a-assets>
+    <a-entity id="base" base></a-entity>
+    <a-entity scale="100 100 100" car-model>
+      
+    </a-entity>
+    <a-camera position="0 30 160"></a-camera>
+  </a-scene>
+</body>
+
+</html>
